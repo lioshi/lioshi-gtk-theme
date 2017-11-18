@@ -28,3 +28,12 @@ Alternatively you may install Paper with the provided installation script:
     ./install-gtk-theme.sh
 
 -----------
+
+
+
+Changes
+see _colors.scss
+
+After change scss run:
+
+    sudo sass --update --sourcemap=none . && ./autogen.sh && sudo make && sudo make install
