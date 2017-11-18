@@ -9,7 +9,7 @@ import subprocess
 
 INKSCAPE = '/usr/bin/inkscape'
 OPTIPNG = '/usr/bin/optipng'
-MAINDIR = '../Paper'
+MAINDIR = '../Lioshi'
 SRC = os.path.join('.', 'gtk3')
 
 inkscape_process = None

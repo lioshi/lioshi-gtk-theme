@@ -2,18 +2,18 @@
 # -*- Mode: sh; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
 # Authors:
-#   Sam Hewitt <sam@snwh.org>
+#   Lioshi <lioshi@lioshi.com>
 #
 # Description:
-#   An installation bash script for Paper GTK Theme
+#   An installation bash script for Lioshi GTK Theme
 #
 # Legal Stuff:
 #
-# This file is part of the Paper GTK Theme and is free software; you can redistribute it and/or modify it under
+# This file is part of the Lioshi GTK Theme and is free software; you can redistribute it and/or modify it under
 # the terms of the GNU Lesser General Public License as published by the Free Software
 # Foundation; version 3.
 #
-# This file is part of the Paper GTK Theme and is distributed in the hope that it will be useful, but WITHOUT
+# This file is part of the Lioshi GTK Theme and is distributed in the hope that it will be useful, but WITHOUT
 # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
 # details.
@@ -23,7 +23,7 @@
 
 clear
 echo '#-----------------------------------------#'
-echo '#     Paper GTK Theme Install Script      #'
+echo '#     Lioshi GTK Theme Install Script      #'
 echo '#-----------------------------------------#'
 
 
@@ -53,31 +53,31 @@ esac
 
 function main {
 if [ "$UID" -eq "$ROOT_UID" ]; then
-	if [ -d /usr/share/themes/Paper ]; then
+	if [ -d /usr/share/themes/Lioshi ]; then
 		echo
 		show_question '\tFound an existing installation. Replace it? (Y)es, (N)o : ' 
 		echo
 		read INPUT
 		case $INPUT in
-			[Yy]* ) rm -Rf /usr/share/themes/Paper 2>/dev/null;;
+			[Yy]* ) rm -Rf /usr/share/themes/Lioshi 2>/dev/null;;
 			[Nn]* );;
 		    * ) clear; show_error '\tSorry, try again.'; main;;
 		esac
 	fi
 	echo "Installing..."
-	cp -R ./Paper/ /usr/share/themes/
-	chmod -R 755 /usr/share/themes/Paper
+	cp -R ./Lioshi/ /usr/share/themes/
+	chmod -R 755 /usr/share/themes/Lioshi
 	echo "Installation complete!"
 	echo "You will have to set your theme manually."
 	end
 elif [ "$UID" -ne "$ROOT_UID" ]; then
-	if [ -d $HOME/.local/share/themes/Paper ]; then
+	if [ -d $HOME/.local/share/themes/Lioshi ]; then
 		echo
 		show_question '\tFound an existing installation. Replace it? (Y)es, (N)o : ' 
 		echo
 		read INPUT
 		case $INPUT in
-			[Yy]* ) rm -Rf "$HOME/.local/share/themes/Paper" 2>/dev/null;;
+			[Yy]* ) rm -Rf "$HOME/.local/share/themes/Lioshi" 2>/dev/null;;
 			[Nn]* );;
 		    * ) clear; show_error '\tSorry, try again.'; main;;
 		esac
@@ -85,10 +85,10 @@ elif [ "$UID" -ne "$ROOT_UID" ]; then
 	echo "Installing..."
 	# .local/share/themes
 	install -d $HOME/.local/share/themes
-	cp -R ./Paper/ $HOME/.local/share/themes/
+	cp -R ./Lioshi/ $HOME/.local/share/themes/
 	# .themes
 	install -d $HOME/.themes
-	cp -R ./Paper/ $HOME/.themes/
+	cp -R ./Lioshi/ $HOME/.themes/
 	echo "Installation complete!"
 	set
 fi
@@ -98,7 +98,7 @@ fi
 
 function set {
 echo
-show_question '\tDo you want to set Paper as desktop theme? (Y)es, (N)o : ' 
+show_question '\tDo you want to set Lioshi as desktop theme? (Y)es, (N)o : ' 
 echo
 read INPUT
 case $INPUT in
@@ -109,11 +109,11 @@ esac
 }
 
 function settheme {
-echo "Setting Paper as desktop GTK theme..."
+echo "Setting Lioshi as desktop GTK theme..."
 gsettings reset org.gnome.desktop.interface gtk-theme
 gsettings reset org.gnome.desktop.wm.preferences theme
-gsettings set org.gnome.desktop.interface gtk-theme "Paper"
-gsettings set org.gnome.desktop.wm.preferences theme "Paper"
+gsettings set org.gnome.desktop.interface gtk-theme "Lioshi"
+gsettings set org.gnome.desktop.wm.preferences theme "Lioshi"
 echo "Done."
 setthemegnome
 }
@@ -121,11 +121,11 @@ setthemegnome
 function setthemegnome {
 if [ -d /usr/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com/ ]; then	
 	echo
-	show_question '\tWould you like to use Paper as your GNOME Shell theme? (Y)es, (N)o : '
+	show_question '\tWould you like to use Lioshi as your GNOME Shell theme? (Y)es, (N)o : '
 	echo
 	read INPUT
 	case $INPUT in
-		[Yy]* ) gsettings set org.gnome.shell.extensions.user-theme name "Paper";;
+		[Yy]* ) gsettings set org.gnome.shell.extensions.user-theme name "Lioshi";;
 	    [Nn]* ) end;;
 	    * ) echo; show_error "\aUh oh, invalid response. Please retry."; set;;
 	esac
@@ -144,7 +144,7 @@ function end {
 ROOT_UID=0
 if [ "$UID" -ne "$ROOT_UID" ]; then
 	echo
-	echo "Paper GTK Theme will be installed in:"
+	echo "Lioshi GTK Theme will be installed in:"
 	echo
 	show_dir '\t$HOME/.local/share/themes'
 	echo
@@ -152,7 +152,7 @@ if [ "$UID" -ne "$ROOT_UID" ]; then
 	continue
 else
 	echo
-	echo "Paper GTK Theme will be installed in:"
+	echo "Lioshi GTK Theme will be installed in:"
 	echo
 	show_dir '\t/usr/share/themes'
 	echo
