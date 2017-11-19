@@ -23,11 +23,11 @@
 */
 
 #panel {
-    /*background-color: #454d50 !important;*/
-    background-color: rgba(57, 64, 66, 0.95);
+    /*background-color: #3D3D3D !important;*/
+    background-color: rgba(61, 61, 61, 0.95);
     background-gradient-direction: none;
-    background-gradient-start: rgba(57, 64, 66, 0.95);
-    background-gradient-end: rgba(57, 64, 66, 0.95);
+    background-gradient-start: rgba(61, 61, 61, 0.95);
+    background-gradient-end: rgba(61, 61, 61, 0.95);
     border-top-color: #666; 
     border-bottom: 1px solid #666;
     app-icon-bottom-clip: 0px;
@@ -38,10 +38,10 @@
 
 
   #panel:overview {
-    background-color: rgba(57, 64, 66, 0.95);
+    background-color: rgba(61, 61, 61, 0.95);
     background-gradient-direction: none;
-    background-gradient-start: rgba(57, 64, 66, 0.95);
-    background-gradient-end: rgba(57, 64, 66, 0.95);
+    background-gradient-start: rgba(61, 61, 61, 0.95);
+    background-gradient-end: rgba(61, 61, 61, 0.95);
     border: none; }
 
   #panel.lock-screen {
@@ -99,7 +99,7 @@
   .panel-button:active,
   .panel-button:overview,
   .panel-button:focus {
-     background-color: #9fb0b9 !important; /* FIXME */
+     background-color: #606060 !important; /* FIXME */
      color: #fff !important;
      border: none !important;
      border-image: none !important;
@@ -145,7 +145,7 @@
   }
 
   .popup-menu-item:active {
-    background-color: #9fb0b9 !important;
+    background-color: #606060 !important;
     color: #fff !important;
   }
 
@@ -198,7 +198,7 @@
   }
   .popup-menu StScrollBar StButton#vhandle:active,
   .popup-menu StScrollBar StButton#hhandle:active {
-    background-color: #9fb0b9;
+    background-color: #606060;
   }
 
 /* CALENDAR */
@@ -213,12 +213,12 @@
   }
   .calendar-day-base:active {
     color: #fff !important;
-    background-color: #9fb0b9 !important;
+    background-color: #606060 !important;
     background-image: none !important;
     border-image: none !important;
   }
   .calendar-today {
-    background-color: #9fb0b9 !important;
+    background-color: #606060 !important;
     background-image: none !important;
     border-image: none !important;
   }
@@ -248,7 +248,7 @@
 .system-menu-action:focus,
 .system-menu-action:active {
     color: white;
-    background-color: #9fb0b9;
+    background-color: #606060;
     border: none;
 }
 
