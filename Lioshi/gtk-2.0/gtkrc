@@ -16,25 +16,35 @@
 # with the Lioshi GTK theme. If not, see http://www.gnu.org/licenses/.
 
 # ==============================================================================
-# PAPER GTK2 THEME
+# LIOSHI GTK2 THEME
 # ==============================================================================
 
-# Text/base colors
-gtk-color-scheme = "text_color:#333333\nbase_color:white"
-# Foreground/background colors
-gtk-color-scheme = "fg_color:#4d4d4d\nbg_color:#ececec"
-# Selection colors
-gtk-color-scheme = "selected_fg_color:#ffffff\nselected_bg_color:#607d8b"
-# Tooltip colors
-gtk-color-scheme = "tooltip_fg_color:#4d4d4d\ntooltip_bg_color:#ffffff"
-# Window colors
-gtk-color-scheme = "wm_color:#546e7a\nunfocused_wm_color:#5A6367"
-# Panel colors
-gtk-color-scheme = "panel_bg_color:#263238\npanel_fg_color:#ffffff"
-# Dark Theme - Text/base colors
-gtk-color-scheme = "dark_text_color:#ffffff\ndark_base_color:#455a64"
-# Dark Theme - Foreground/background colors
-gtk-color-scheme = "dark_fg_color:#cfd8dc\ndark_bg_color:#37474f"
+gtk-color-scheme = "base_color: #353536"
+gtk-color-scheme = "text_color: #dddddd"
+gtk-color-scheme = "bg_color: #2d2d2d"
+gtk-color-scheme = "fg_color: #dddddd"
+gtk-color-scheme = "tooltip_bg_color: #656565"
+gtk-color-scheme = "tooltip_fg_color: #ffffff"
+gtk-color-scheme = "selected_bg_color: #919191"
+gtk-color-scheme = "selected_fg_color: #ffffff"
+gtk-color-scheme = "insensitive_bg_color: #464646"
+gtk-color-scheme = "insensitive_fg_color: #808080"
+gtk-color-scheme = "notebook_bg: #464646"
+gtk-color-scheme = "dark_sidebar_bg: #353945"
+gtk-color-scheme = "link_color: #7a7a7a"
+
+gtk-color-scheme = "menu_bg: #444444" 
+gtk-color-scheme = "visited_link_color:#735279" 
+gtk-color-scheme = "inverted_dark_color:#777777" 
+gtk-color-scheme = "inverted_fg_color:#d3d3d3" 
+gtk-color-scheme = "scroll_slider_color:#bdbdbd" 
+gtk-color-scheme = "scroll_slider_prelight_color:#949494" 
+gtk-color-scheme = "panel_bg_color:#272727" 
+gtk-color-scheme = "secondary_dark_color:#303030" 
+gtk-color-scheme = "solid_white:#ffffff" 
+gtk-color-scheme = "accent_color:#9b9b9b" 
+gtk-color-scheme = "light_color:#3f3f3f"
+
 
 gtk-auto-mnemonics = 1
 gtk-primary-button-warps-slider = 1
@@ -49,3 +59,4 @@ include "apps/libreoffice.rc"
 include "apps/terminal.rc"
 include "apps/thunar.rc"
 # include "apps/xfce.rc"
+include "apps/common.rc"
