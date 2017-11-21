@@ -5116,10 +5116,10 @@ VteTerminal {
 
 TerminalWindow .titlebar,
 TerminalWindow .header-bar {
-  background-color: #546e7a; }
+  background-color: #313131; }
   TerminalWindow .titlebar:backdrop,
   TerminalWindow .header-bar:backdrop {
-    background-color: #3f535c; }
+    background-color: #181818; }
 
 /************
  * Nautilus *
@@ -5710,59 +5710,59 @@ UnityDecoration {
   /* Size property, space of the title that can be faded */
   -UnityDecoration-title-alignment: 0.0;
   /* Float from 0.0 to 1.0, to align the title */
-  background-color: #546e7a;
+  background-color: #313131;
   color: #dbdee0; }
   UnityDecoration .top {
     padding: 0 5px 0 5px;
     border-radius: 4px 4px 0px 0px;
     box-shadow: none;
-    border: 1px solid #546e7a;
+    border: 1px solid #313131;
     border-bottom-width: 0;
-    background-color: #546e7a;
+    background-color: #313131;
     color: #dbdee0;
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
     UnityDecoration .top:backdrop {
       border-bottom-width: 0;
-      background-color: #3f535c;
+      background-color: #181818;
       color: #c0c5c8;
       border-top: 1px solid rgba(255, 255, 255, 0.1); }
     UnityDecoration .top .menuitem {
       color: #dbdee0; }
       UnityDecoration .top .menuitem:backdrop {
-        background-color: #3f535c;
+        background-color: #181818;
         color: #c0c5c8; }
 
 UnityDecoration.left,
 UnityDecoration.right {
   background-repeat: repeat-x;
-  background-color: #536c78;
+  background-color: #2f2f2f;
   background-size: 1px 120px;
   background-clip: border-box;
-  background-image: linear-gradient(to bottom, #546e7a, #536c78); }
+  background-image: linear-gradient(to bottom, #313131, #2f2f2f); }
 
 UnityDecoration.bottom {
   background-size: 1px;
   background-repeat: repeat-x;
-  background-color: #536c78; }
+  background-color: #2f2f2f; }
 
 UnityDecoration.left:backdrop,
 UnityDecoration.right:backdrop,
 UnityDecoration.bottom:backdrop {
   background-size: 1px;
   background-repeat: repeat-x;
-  background-color: #3f535c; }
+  background-color: #181818; }
 
 /**************
 * Unity Panel *
 ***************/
 UnityPanelWidget,
 .unity-panel {
-  background-color: #2a383e;
+  background-color: black;
   color: #dbdee0; }
 
 UnityPanelWidget:backdrop,
 .unity-panel:backdrop {
-  background-color: #161c1f;
+  background-color: black;
   color: #c0c5c8; }
 
 .unity-panel.menuitem,
@@ -5776,7 +5776,7 @@ UnityPanelWidget:backdrop,
 
 .unity-panel.menu.menubar,
 .unity-panel .menu .menubar {
-  background-color: #2a383e;
+  background-color: black;
   color: #dbdee0; }
 
 .unity-panel.menubar:backdrop,
@@ -5796,7 +5796,7 @@ UnityPanelWidget:backdrop,
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem:hover {
   border-radius: 0;
-  background-color: #526b77;
+  background-color: #2e2e2e;
   color: #dbdee0;
   box-shadow: none; }
 

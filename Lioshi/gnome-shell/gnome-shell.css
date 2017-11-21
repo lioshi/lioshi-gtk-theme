@@ -80,7 +80,7 @@ StEntry {
   selected-color: #ffffff; }
   StEntry:focus {
     background-color: #fff;
-    color: #2d3335;
+    color: #313131;
     box-shadow: none;
     border-color: rgba(0,0,0,0); }
   StEntry:insensitive {
@@ -1083,7 +1083,7 @@ StScrollBar {
 #dash {
   font-size: 9pt;
   color: #dbdee0;
-  /*background-color: #546e7a; */
+  /*background-color: #313131; */
   background-color: #3D3D3D;
   padding: 4px 0;
   border: 1px solid rgba(0,0,0,0.05);
@@ -1596,7 +1596,7 @@ StScrollBar {
 
 .keyboard-key {
   color: #dbdee0;
-  background-color: #2d3335;
+  background-color: #313131;
   box-shadow: inset 0 1px #3D3D3D;
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black;
@@ -1623,12 +1623,12 @@ StScrollBar {
   .keyboard-key:active {
     color: white;
     border-color: rgba(0,0,0,0.7);
-    background-color: #2d3335;
+    background-color: #313131;
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none; }
   .keyboard-key:grayed {
-    background-color: #2d3335;
+    background-color: #313131;
     color: #dbdee0;
     border-color: rgba(0,0,0,0.7); }
 
@@ -1714,7 +1714,7 @@ StScrollBar {
       .login-dialog .modal-dialog-button:default:active {
         color: white;
         border-color: rgba(0,0,0,0.7);
-        background-color: #2d3335;
+        background-color: #313131;
         box-shadow: none;
         text-shadow: none;
         icon-shadow: none; }
@@ -1877,7 +1877,7 @@ StScrollBar {
   box-shadow: 0px 2px 4px rgba(0,0,0,0.4); }
 
 #lockDialogGroup {
-  background: #2d3335 url("assets/noise-texture.png");
+  background: #313131 url("assets/noise-texture.png");
   background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {

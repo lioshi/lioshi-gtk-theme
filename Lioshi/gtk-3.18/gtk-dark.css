@@ -5055,7 +5055,7 @@ VteTerminal {
 
 TerminalWindow .titlebar,
 TerminalWindow .header-bar {
-  background-color: #546e7a; }
+  background-color: #313131; }
   TerminalWindow .titlebar:backdrop,
   TerminalWindow .header-bar:backdrop {
     background-color: #3f535c; }
@@ -5649,15 +5649,15 @@ UnityDecoration {
   /* Size property, space of the title that can be faded */
   -UnityDecoration-title-alignment: 0.0;
   /* Float from 0.0 to 1.0, to align the title */
-  background-color: #546e7a;
+  background-color: #313131;
   color: #dbdee0; }
   UnityDecoration .top {
     padding: 0 5px 0 5px;
     border-radius: 4px 4px 0px 0px;
     box-shadow: none;
-    border: 1px solid #546e7a;
+    border: 1px solid #313131;
     border-bottom-width: 0;
-    background-color: #546e7a;
+    background-color: #313131;
     color: #dbdee0;
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
     UnityDecoration .top:backdrop {
@@ -5677,7 +5677,7 @@ UnityDecoration.right {
   background-color: #536c78;
   background-size: 1px 120px;
   background-clip: border-box;
-  background-image: linear-gradient(to bottom, #546e7a, #536c78); }
+  background-image: linear-gradient(to bottom, #313131, #536c78); }
 
 UnityDecoration.bottom {
   background-size: 1px;

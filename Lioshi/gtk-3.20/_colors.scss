@@ -6,7 +6,7 @@ $base_color: if($variant=='light', #ffffff, #313131);
 $bg_color: if($variant=='light', #f7f7f7, #2D2D2D);
 $fg_color: if($variant == 'light', #444, #cfd8dc);
 $text_color: if($variant == 'light', $fg_color, $fg_color);
-$headerbar_bg_color: if($variant == 'light', #546e7a, lighten($base_color, 5%));
+$headerbar_bg_color: if($variant == 'light', #313131, lighten($base_color, 5%));
 $headerbar_fg_color: if($variant == 'light', #ffffff, transparentize(#ffffff, 0.2));
 
 // Primary colors

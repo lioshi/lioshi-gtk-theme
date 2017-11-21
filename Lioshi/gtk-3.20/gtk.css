@@ -2865,12 +2865,12 @@ headerbar {
   padding: 0 8px;
   border: none;
   border-radius: 4px 4px 0 0;
-  background-color: #546e7a;
+  background-color: #313131;
   color: #ffffff;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2); }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
-    background-color: #546e7a;
+    background-color: #313131;
     color: rgba(255, 255, 255, 0.5);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     transition: 200ms ease-out; }
@@ -2930,7 +2930,7 @@ headerbar {
   .default-decoration.titlebar:not(headerbar),
   headerbar.default-decoration {
     padding: 6px;
-    background-color: #546e7a;
+    background-color: #313131;
     color: #ffffff; }
     .default-decoration.titlebar:not(headerbar) .maximized,
     headerbar.default-decoration .maximized {
@@ -2938,7 +2938,7 @@ headerbar {
       border-radius: 0; }
     .default-decoration.titlebar:backdrop:not(headerbar),
     headerbar.default-decoration:backdrop {
-      background-color: #4a606b;
+      background-color: #242424;
       color: rgba(255, 255, 255, 0.5); }
   .titlebar:not(headerbar) entry,
   headerbar entry {
@@ -3231,12 +3231,12 @@ headerbar {
       .titlebar:not(headerbar) button.titlebutton:active,
       headerbar button.titlebutton:active {
         background-color: #ffffff;
-        color: #546e7a;
+        color: #313131;
         border-radius: 50%;
         box-shadow: none; }
         .titlebar:not(headerbar) button.titlebutton:active GtkImage,
         headerbar button.titlebutton:active GtkImage {
-          color: #546e7a; }
+          color: #313131; }
   .titlebar:not(headerbar) .separator,
   headerbar .separator {
     color: transparent;
@@ -3253,13 +3253,13 @@ headerbar:last-child, headerbar:last-child:backdrop {
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
-  background-color: #546e7a;
+  background-color: #313131;
   background-image: none;
   border-style: none;
   border-color: transparent;
   box-shadow: none; }
   window.csd > .titlebar:not(headerbar):backdrop {
-    background-color: #4a606b; }
+    background-color: #242424; }
 
 /**************
  * GtkInfoBar *
@@ -3513,10 +3513,10 @@ menubar {
   -GtkWidget-window-dragging: true;
   padding: 0px;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
-  background-color: #546e7a;
+  background-color: #313131;
   color: #ffffff; }
   menubar:backdrop {
-    background-color: #4a606b; }
+    background-color: #242424; }
   menubar > menuitem {
     min-height: 16px;
     padding: 4px 8px; }
@@ -5502,10 +5502,10 @@ switch {
  ************/
 toolbar {
   padding: 0px;
-  background-color: #546e7a;
+  background-color: #313131;
   color: #ffffff; }
   toolbar:backdrop {
-    background-color: #4a606b;
+    background-color: #242424;
     color: rgba(255, 255, 255, 0.5); }
 
 .osd toolbar {
@@ -6533,10 +6533,10 @@ VteTerminal {
 
 TerminalWindow .titlebar,
 TerminalWindow headerbar {
-  background-color: #546e7a; }
+  background-color: #313131; }
   TerminalWindow .titlebar:backdrop,
   TerminalWindow headerbar:backdrop {
-    background-color: #3f535c; }
+    background-color: #181818; }
 
 /************
  * Nautilus *
@@ -7127,59 +7127,59 @@ UnityDecoration {
   /* Size property, space of the title that can be faded */
   -UnityDecoration-title-alignment: 0.0;
   /* Float from 0.0 to 1.0, to align the title */
-  background-color: #546e7a;
+  background-color: #313131;
   color: #dbdee0; }
   UnityDecoration .top {
     padding: 0 5px 0 5px;
     border-radius: 4px 4px 0px 0px;
     box-shadow: none;
-    border: 1px solid #546e7a;
+    border: 1px solid #313131;
     border-bottom-width: 0;
-    background-color: #546e7a;
+    background-color: #313131;
     color: #dbdee0;
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
     UnityDecoration .top:backdrop {
       border-bottom-width: 0;
-      background-color: #3f535c;
+      background-color: #181818;
       color: #c0c5c8;
       border-top: 1px solid rgba(255, 255, 255, 0.1); }
     UnityDecoration .top .menuitem {
       color: #dbdee0; }
       UnityDecoration .top .menuitem:backdrop {
-        background-color: #3f535c;
+        background-color: #181818;
         color: #c0c5c8; }
 
 UnityDecoration.left,
 UnityDecoration.right {
   background-repeat: repeat-x;
-  background-color: #536c78;
+  background-color: #2f2f2f;
   background-size: 1px 120px;
   background-clip: border-box;
-  background-image: linear-gradient(to bottom, #546e7a, #536c78); }
+  background-image: linear-gradient(to bottom, #313131, #2f2f2f); }
 
 UnityDecoration.bottom {
   background-size: 1px;
   background-repeat: repeat-x;
-  background-color: #536c78; }
+  background-color: #2f2f2f; }
 
 UnityDecoration.left:backdrop,
 UnityDecoration.right:backdrop,
 UnityDecoration.bottom:backdrop {
   background-size: 1px;
   background-repeat: repeat-x;
-  background-color: #3f535c; }
+  background-color: #181818; }
 
 /**************
 * Unity Panel *
 ***************/
 UnityPanelWidget,
 .unity-panel {
-  background-color: #2a383e;
+  background-color: black;
   color: #dbdee0; }
 
 UnityPanelWidget:backdrop,
 .unity-panel:backdrop {
-  background-color: #161c1f;
+  background-color: black;
   color: #c0c5c8; }
 
 .unity-panel.menuitem,
@@ -7193,7 +7193,7 @@ UnityPanelWidget:backdrop,
 
 .unity-panel.menu.menubar,
 .unity-panel .menu .menubar {
-  background-color: #2a383e;
+  background-color: black;
   color: #dbdee0; }
 
 .unity-panel.menubar:backdrop,
@@ -7213,7 +7213,7 @@ UnityPanelWidget:backdrop,
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem:hover {
   border-radius: 0;
-  background-color: #526b77;
+  background-color: #2e2e2e;
   color: #dbdee0;
   box-shadow: none; }
 
