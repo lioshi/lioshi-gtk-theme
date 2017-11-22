@@ -22,7 +22,7 @@ label:focus(visible),
 row:focus(visible),
 flowboxchild:focus(visible) {
   // We use the outline properties to signal the focus properties
-  // to the adwaita engine: using real CSS properties is faster,
+  // to the Lioshi engine: using real CSS properties is faster,
   // and we don't use any outlines for now.
 
   outline-color: gtkalpha(currentColor, 0.3);

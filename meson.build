@@ -9,7 +9,7 @@ theme_variants = [
   'dark',
 ]
 
-theme_deps += custom_target('Adwaita',
+theme_deps += custom_target('Lioshi',
                             input: 'gtk-contained.scss',
                             output: 'gtk-contained.css',
                             command: [
@@ -19,7 +19,7 @@ theme_deps += custom_target('Adwaita',
                             build_by_default: true)
 
 foreach variant: theme_variants
-  theme_deps += custom_target('Adwaita-' + variant,
+  theme_deps += custom_target('Lioshi-' + variant,
                               input: 'gtk-contained-@0@.scss'.format(variant),
                               output: 'gtk-contained-@0@.css'.format(variant),
                               command: [
