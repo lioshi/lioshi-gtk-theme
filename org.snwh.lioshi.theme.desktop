@@ -1,7 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Terminal=false
-Name=Lioshi GTK+ Theme
-Icon=preferences-desktop-theme
-Exec=bash -c 'notify-send "Lioshi GTK+ Theme" "Getting the latest version of the Lioshi themes..." -i system-software-update; cd /tmp/; rm -Rf /tmp/lioshi-gtk-theme.zip 2>/dev/null; rm -Rf /tmp/lioshi-gtk-theme-master/ 2>/dev/null; wget https://github.com/lioshi/lioshi-gtk-theme/archive/master.zip -O lioshi-gtk-theme.zip; unzip lioshi-gtk-theme.zip; cd lioshi-gtk-theme-master; rm -Rf "$HOME/.local/share/themes/Lioshi" 2>/dev/null; install -d $HOME/.local/share/themes; cp -R ./Lioshi/ $HOME/.local/share/themes/; install -d $HOME/.themes; cp -R ./Lioshi/ $HOME/.themes/;gsettings reset org.gnome.desktop.interface theme; gsettings set org.gnome.desktop.interface theme "Lioshi"; notify-send "All done!" "Enjoy the latest version of Lioshi!" -i face-smile'
